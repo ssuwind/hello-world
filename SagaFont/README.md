@@ -35,6 +35,14 @@
 - ``16.2.1`` 允许屏蔽字体区间，保留此字体区间外的其他部分
  
 # 更新日志
+ SagaFont 1.0.1(1000002)
+ - 1.基于 MFGA 适配 ColorOS 16，主字体统一为沙加体 SagaSans.ttf（请放入 /data/adb/modules/SagaFont/system/fonts/）
+ - 2.修复 zdigit 数字族：原引用 ColorOS 系统 ZDigit-*.ttf 会拦截数字字形，现统一改为 SagaSans.ttf，确保数字全局应用沙加体
+ - 3.更新颜色与字形工具路径为 SagaFont
+
+ SagaFont 1.0.0(1000001)
+ - 1.基于 MFGA 17.0.0 适配，全局字体替换为沙加体（SagaSans）
+
  17.0.0.06-27-alpha(1717180001)
  - 1.同步Roboto到3.0.16(SU)
  - 2.WebUI新增主字体上色，需支持COLRv0，Android10及以上
