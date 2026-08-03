@@ -35,6 +35,10 @@
 - ``16.2.1`` 允许屏蔽字体区间，保留此字体区间外的其他部分
  
 # 更新日志
+ SagaFont 1.0.3(1000004)
+ - 1.修复 ColorOS 系统 UI（状态栏、锁屏等）直接加载的 SysFont/SysSans-En/Roboto 字体文件未应用沙加体的问题，安装时自动用 SagaSans.ttf 覆盖这些文件
+ - 2.确保数字与英文字形在 ColorOS 系统组件中全局显示沙加体
+
  SagaFont 1.0.2(1000003)
  - 1.修复 lang="zh" 族引用缺失的 MiSansL3.otf 问题，改为 SagaSans.ttf，确保中文全局应用沙加体
 

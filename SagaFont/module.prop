@@ -1,7 +1,7 @@
 id=SagaFont
 name=SagaFont
-version=1.0.2
-versionCode=1000003
+version=1.0.3
+versionCode=1000004
 author=Adapted for ColorOS 16
 description=基于 MFGA 适配 ColorOS 16 的全局字体模块，中英文字体统一显示为沙加体(SagaSans)。请在 ColorOS 设置中启用 Roboto 以获得最佳效果。Requires Magisk 28.0+ and KernelSU 11986+ Disable "Umount Module by default".
 minMagisk=28000

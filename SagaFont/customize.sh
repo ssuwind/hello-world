@@ -57,6 +57,16 @@ else
   rm -rf "$MODPATH/zygisk"
 fi
 
+SAGA_MAIN="$MODPATH/system/fonts/SagaSans.ttf"
+if [ -f "$SAGA_MAIN" ]; then
+  ui_print "- Applying SagaSans to ColorOS system UI fonts..."
+  for f in SysFont-Regular.ttf SysSans-En-Regular.ttf Roboto-Regular.ttf Roboto-Italic.ttf RobotoFlex-Regular.ttf; do
+    if [ -f "$MODPATH/system/fonts/$f" ]; then
+      cp -f "$SAGA_MAIN" "$MODPATH/system/fonts/$f"
+    fi
+  done
+fi
+
 . "$MODPATH/search_dirs.sh"
 
 ui_print "- Welcome to SagaFont!"
