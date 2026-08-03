@@ -35,6 +35,9 @@
 - ``16.2.1`` 允许屏蔽字体区间，保留此字体区间外的其他部分
  
 # 更新日志
+ SagaFont 1.0.2(1000003)
+ - 1.修复 lang="zh" 族引用缺失的 MiSansL3.otf 问题，改为 SagaSans.ttf，确保中文全局应用沙加体
+
  SagaFont 1.0.1(1000002)
  - 1.基于 MFGA 适配 ColorOS 16，主字体统一为沙加体 SagaSans.ttf（请放入 /data/adb/modules/SagaFont/system/fonts/）
  - 2.修复 zdigit 数字族：原引用 ColorOS 系统 ZDigit-*.ttf 会拦截数字字形，现统一改为 SagaSans.ttf，确保数字全局应用沙加体

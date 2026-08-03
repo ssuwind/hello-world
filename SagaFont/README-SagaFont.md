@@ -25,7 +25,7 @@
 
 ## 修改说明
 
-- `fonts.xml`：主字体族（sans-serif、serif、默认 fallback、zh-Hans/zh-Hant/ja/ko）全部引用 `SagaSans.ttf`，中英文统一显示为沙加体；`zdigit`/`zdigit-for-medium` 数字族原引用 ColorOS 系统 ZDigit-*.ttf（会拦截数字字形），现已统一改为 `SagaSans.ttf`，确保数字全局应用沙加体；其余 Unicode 覆盖字体（emoji、符号等）保留原逻辑。
+- `fonts.xml`：主字体族（sans-serif、serif、默认 fallback、lang="zh"/zh-Hans/zh-Hant/ja/ko）全部引用 `SagaSans.ttf`，中英文统一显示为沙加体；`zdigit`/`zdigit-for-medium` 数字族原引用 ColorOS 系统 ZDigit-*.ttf（会拦截数字字形），现已统一改为 `SagaSans.ttf`，确保数字全局应用沙加体；其余 Unicode 覆盖字体（emoji、符号等）保留原逻辑。
 - `fonts_list.yaml`：保留 ColorOS 的 `fonts_customization.xml` 黑名单，维持 ColorOS 字体配置兼容。
 - `module.prop`：更新模块 ID/名称/描述为 SagaFont。
 - `recolor_glyph.sh` / WebUI：主字体上色、屏蔽保护同步改为 `SagaSans.ttf`。
